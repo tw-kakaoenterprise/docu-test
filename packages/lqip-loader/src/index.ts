@@ -6,8 +6,8 @@
  */
 
 import * as lqip from './lqip';
-import { loader } from 'webpack';
-const { LoaderContext, LoaderModule } = loader;
+import type { loader } from 'webpack';
+type { LoaderContext, LoaderModule } = typeof loader;
 
 type Options = {
   base64: boolean;

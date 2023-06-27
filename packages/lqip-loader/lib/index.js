@@ -8,6 +8,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
 const lqip = tslib_1.__importStar(require("./lqip"));
+const { LoaderContext, LoaderModule } = webpack_1.loader;
 async function lqipLoader(contentBuffer) {
     this.cacheable();
     const callback = this.async();
